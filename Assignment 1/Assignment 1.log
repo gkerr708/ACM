@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.13)  11 JAN 2023 21:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  14 JAN 2023 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"./Assignment 1.tex"
 (Assignment 1.tex
-LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-30>
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-12-17>
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -19,9 +19,9 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 )
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -37,7 +37,7 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip49
+\@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -46,11 +46,11 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
-\ex@=\dimen139
+\ex@=\dimen141
 ))
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen140
+\pmbraise@=\dimen142
 )
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
@@ -72,7 +72,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen141
+\big@size=\dimen143
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count198
@@ -90,15 +90,15 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count269
 \maxfields@=\count270
 \andhelp@=\toks19
-\eqnshift@=\dimen142
-\alignsep@=\dimen143
-\tagshift@=\dimen144
-\tagwidth@=\dimen145
-\totwidth@=\dimen146
-\lineht@=\dimen147
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
 \@envbody=\toks20
-\multlinegap=\skip50
-\multlinetaggap=\skip51
+\multlinegap=\skip51
+\multlinetaggap=\skip52
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -123,10 +123,10 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen148
-\Gin@req@width=\dimen149
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
 )
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/doublestroke\dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
@@ -141,21 +141,21 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@cnth=\count271
 \Gm@cntv=\count272
 \c@Gm@tempcnt=\count273
-\Gm@bindingoffset=\dimen150
-\Gm@wd@mp=\dimen151
-\Gm@odd@mp=\dimen152
-\Gm@even@mp=\dimen153
-\Gm@layoutwidth=\dimen154
-\Gm@layoutheight=\dimen155
-\Gm@layouthoffset=\dimen156
-\Gm@layoutvoffset=\dimen157
+\Gm@bindingoffset=\dimen152
+\Gm@wd@mp=\dimen153
+\Gm@odd@mp=\dimen154
+\Gm@even@mp=\dimen155
+\Gm@layoutwidth=\dimen156
+\Gm@layoutheight=\dimen157
+\Gm@layouthoffset=\dimen158
+\Gm@layoutvoffset=\dimen159
 \Gm@dimlist=\toks23
 
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count274
 \l__pdf_internal_box=\box53
 ) (Assignment 1.aux)
@@ -180,13 +180,13 @@ LaTeX Font Info:    ... okay on input line 9.
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count275
-\scratchdimen=\dimen158
+\scratchdimen=\dimen160
 \scratchbox=\box54
 \nofMPsegments=\count276
 \nofMParguments=\count277
 \everyMPshowfont=\toks24
 \MPscratchCnt=\count278
-\MPscratchDim=\dimen159
+\MPscratchDim=\dimen161
 \MPnumerator=\count279
 \makeMPintoPDFobject=\count280
 \everyMPtoPDFconversion=\toks25
@@ -269,30 +269,31 @@ File: fig_1.pdf Graphic file (type pdf)
 <use fig_1.pdf>
 Package pdftex.def Info: fig_1.pdf  used on input line 102.
 (pdftex.def)             Requested size: 289.07999pt x 216.81409pt.
-[3 <./fig_1.pdf>] [4] [5] (Assignment 1.aux) ) 
+[3 <./fig_1.pdf>] [4] [5] [6] (Assignment 1.aux) ) 
 Here is how much of TeX's memory you used:
- 3161 strings out of 475389
- 48294 string characters out of 2777000
- 406264 words of memory out of 3000000
- 24520 multiletter control sequences out of 15000+600000
- 476021 words of font info for 53 fonts, out of 8000000 for 9000
+ 3160 strings out of 476406
+ 48286 string characters out of 2789567
+ 1878787 words of memory out of 3000000
+ 23502 multiletter control sequences out of 15000+600000
+ 519049 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,62p,308b,227s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/gkerr/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gkerr/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/gkerr
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Us
-ers/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pf
-b><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmr12.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr17.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gkerr/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Assignment 1.pdf" (6 pages, 143051 bytes).
+<C:/Users/gkerr/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gkerr/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/g
+kerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
+:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr17.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/gkerr/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gkerr/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gkerr/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Assignment 1.pdf" (7 pages, 161628 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

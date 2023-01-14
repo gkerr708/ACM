@@ -22,7 +22,7 @@
 		\vfill
 		\includegraphics[scale=0.65]{dal_logo2.png}
        \vfill
-           \large{PHYC xxxx}
+           \large{PHYC 3590}
             
        \vspace{0.8cm}
      
@@ -103,74 +103,158 @@ F_1 =& - F_2
   \caption{Diagram}
   \label{fig_1}
 \end{figure}
+For the initial conditions, we have $\vec{v_0}$. Also there is only one force acting on the object $\vec{F_g}$ which means that $\vec{g}$ is the acceleration. Solving for the equations of motion, we have
 \begin{align*}
-g =& -|g|(\sin\phi \hat{x}+\cos\phi \hat{y})
+\vec{g} =& -g(\sin\phi \hat{x}+\cos\phi \hat{y})
 \\
-v_0 =& |v_0|(\cos\theta\hat{x}+\sin\theta\hat{y})
+\vec{v} =& \int \vec{g} \,dt + \vec{v_0}
 \\
-x =& |v_0|\cos\theta \,t - \tfrac{1}{2}|g|\sin\phi \,t^2
+\vec{v_0} =& v_0(\cos\theta\hat{x}+\sin\theta\hat{y})
 \\
-y =& |v_0|\sin\theta \,t - \tfrac{1}{2}|g|\cos\phi \,t^2
+\vec{v} =& -g(\sin\phi \hat{x}+\cos\phi \hat{y})t + |v_0|(\cos\theta\hat{x}+\sin\theta\hat{y})
+\\
+\vec{r} =& \int \vec{v} \,dt
+\\
+\vec{r} =& \int -g(\sin\phi \hat{x}+\cos\phi \hat{y})t + |v_0|(\cos\theta\hat{x}+\sin\theta\hat{y}) \, dt
+\\
+\vec{r} =& -g(\sin\phi \hat{x}+\cos\phi \hat{y})\frac{t^2}{2} + |v_0|(\cos\theta\hat{x}+\sin\theta\hat{y})t
+\\
+x =& v_0\cos\theta \,t - \tfrac{1}{2}g\sin\phi \,t^2
+\\
+y =& v_0\sin\theta \,t - \tfrac{1}{2}g\cos\phi \,t^2
 \end{align*}
+Next we want to find out for how long, the ball is in the air. To do this, we need to find the difference of the two roots of the equation for $y$. The first root is trivially $t_1=0$. For the second root, $t_2 = \Delta t$, we have
 \begin{align*}
 0 =& |v_0|\sin\theta \,t - \tfrac{1}{2}|g|\cos\phi \,t^2
 \\
 0 =& |v_0|\sin\theta  - \tfrac{1}{2}|g|\cos\phi \,t
 \\
-\tfrac{1}{2}|g|\cos\phi \,t =& |v_0|\sin\theta
+\tfrac{1}{2}g\cos\phi \,t =& |v_0|\sin\theta
 \\
-t =& \dfrac{2|v_0|\sin\theta}{|g|\cos\phi}
+t_2 =& \dfrac{2|v_0|\sin\theta}{g\cos\phi}
 \end{align*}
-This means the the ball touches the ramp at $t = \dfrac{2|v_0|\sin\theta}{|g|\cos\phi}$. Subbing this into the equation for $x$ to find the final position gives us
+This means the the ball touches the ramp at $t = \dfrac{2|v_0|\sin\theta}{g\cos\phi}$. Subbing this into the equation for $x$ to find the final position gives us
 \begin{align*}
-x =& |v_0|\cos\theta \left(\dfrac{2|v_0|\sin\theta}{|g|\cos\phi}\right) - \tfrac{1}{2}|g|\sin\phi \left(\dfrac{2|v_0|\sin\theta}{|g|\cos\phi}\right)^2
+x =& |v_0|\cos\theta \left(\dfrac{2v_0\sin\theta}{g\cos\phi}\right) - \tfrac{1}{2}g\sin\phi \left(\dfrac{2v_0\sin\theta}{g\cos\phi}\right)^2
 \\
-x =&  \left(\dfrac{2v_0^2\sin\theta\cos\theta}{|g|\cos\phi}\right) -  \left(\dfrac{2v_0^2\sin^2\theta\sin\phi}{|g|\cos^2\phi}\right)
+x =&  \left(\dfrac{2v_0^2\sin\theta\cos\theta}{g\cos\phi}\right) -  \left(\dfrac{2v_0^2\sin^2\theta\sin\phi}{g\cos^2\phi}\right)
 \\
-x =&  \frac{2v_0^2}{|g|}\left(\dfrac{\sin\theta\cos\theta}{\cos\phi} -  \dfrac{\sin^2\theta\sin\phi}{\cos^2\phi}\right)
+x =&  \frac{2v_0^2}{g}\left(\dfrac{\sin\theta\cos\theta}{\cos\phi} -  \dfrac{\sin^2\theta\sin\phi}{\cos^2\phi}\right)
 \\
-x =&  \frac{2v_0^2}{|g|}\left(
+x =&  \frac{2v_0^2}{g}\left(
 \dfrac{\sin\theta\cos\theta\cos\phi}{\cos^2\phi} -  
 \dfrac{\sin^2\theta\sin\phi}{\cos^2\phi}
 \right)
 \\
-x =&  \frac{2v_0^2}{|g|}\left(
+x =&  \frac{2v_0^2}{g}\left(
 \dfrac{\sin\theta\cos\theta\cos\phi - \sin^2\theta\sin\phi}{\cos^2\phi}
 \right)
 \\
-x =&  \frac{2v_0^2}{|g|}\left(
+x =&  \frac{2v_0^2}{g}\left(
 \dfrac{\sin\theta(\cos\theta\cos\phi - \sin\theta\sin\phi)}{\cos^2\phi}
 \right)
 \\
-x =&  \frac{2v_0^2}{|g|}\left(
+x =&  \frac{2v_0^2}{g}\left(
 \dfrac{\sin\theta\cos(\theta+\phi)}{\cos^2\phi}
 \right)
 \\
-x =& \boxed{R = \dfrac{2v_0^2\sin\theta\cos(\theta+\phi)}{|g|\cos^2\phi}}
+x =& \boxed{R = \dfrac{2v_0^2\sin\theta\cos(\theta+\phi)}{g\cos^2\phi}}
 \\
 &\text{QED}
 \end{align*}
-To solve for $R_{max}$ we need to find a local max for $R$ as a function of $\theta$.
+To solve for $R_{max}$ we need to find a local max for $R$ as a function of $\theta$, where $\tfrac{dR}{d\theta}=0$.
 \begin{align*}
-\frac{dR}{d\theta} =& \frac{d}{d\theta}\dfrac{2v_0^2\sin\theta\cos(\theta+\phi)}{|g|\cos^2\phi}
+\frac{dR}{d\theta} =& \frac{d}{d\theta}\dfrac{2v_0^2\sin\theta\cos(\theta+\phi)}{g\cos^2\phi}
 \\
-\frac{dR}{d\theta} =& \dfrac{2v_0^2}{|g|\cos^2\phi}\frac{d}{d\theta}\left(\sin\theta\cos(\theta+\phi)\right)
+\frac{dR}{d\theta} =& \dfrac{2v_0^2}{g\cos^2\phi}\frac{d}{d\theta}\left(\sin\theta\cos(\theta+\phi)\right)
 \\
-\frac{dR}{d\theta} =& \dfrac{2v_0^2}{|g|\cos^2\phi}\left(
+\frac{dR}{d\theta} =& \dfrac{2v_0^2}{g\cos^2\phi}\left(
 \cos\theta\cos(\theta+\phi) -
 \sin\theta\sin(\theta+\phi)
 \right)
 \\
-\frac{dR}{d\theta} =& \dfrac{2v_0^2}{|g|\cos^2\phi}\sin(2\theta+\phi)
+\frac{dR}{d\theta} =& \dfrac{2v_0^2}{g\cos^2\phi}\cos(2\theta+\phi)
 \\
-0 =& \dfrac{2v_0^2}{|g|\cos^2\phi}\sin(2\theta+\phi)
+0 =& \dfrac{2v_0^2}{g\cos^2\phi}\cos(2\theta+\phi)
 \\
-n\pi =& 2\theta+\phi
+\pi/2 =& 2\theta+\phi
 \\
-\theta_{max} =& \frac{n\pi-\phi}{2}
+\pi/2 - \phi =& 2\theta
+\\
+\theta_{max} =& \frac{\pi-2\phi}{4}
 \end{align*}
-I think this solution is wrong. However, next we just sub theta into the equation for $R(\theta_{max})$.
-
+Next, we just sub $\theta$ into the equation for $R$ to find the maximum distance.
+\begin{align*}
+R_{max} =& \dfrac{2v_0^2\sin\theta\cos(\frac{\pi-2\phi}{4}+\phi)}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{2v_0^2\sin\theta\cos(\frac{\pi-2\phi+4\phi}{4})}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{2v_0^2\sin\theta\cos(\frac{\pi+2\phi}{4})}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{2v_0^2\sin\theta\cos(
+\frac{\pi}{4} + 
+\frac{\phi}{2}
+)}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{2v_0^2\sin\theta
+[\cos(\frac{\pi}{4})
+\cos(\frac{\phi}{2}) -
+\sin(\frac{\pi}{4})
+\sin(\frac{\phi}{2})]
+}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{2v_0^2\sin\theta
+[\frac{\sqrt{2}}{2}
+\cos(\frac{\phi}{2}) -
+\frac{\sqrt{2}}{2}
+\sin(\frac{\phi}{2})]
+}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{\sqrt{2}v_0^2\sin(\frac{\pi-2\phi}{4})
+[\cos(\frac{\phi}{2}) - \sin(\frac{\phi}{2})]
+}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{\sqrt{2}v_0^2
+\sin(\pi/4-\phi/2)
+[\cos(\frac{\phi}{2}) - \sin(\frac{\phi}{2})]
+}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{\sqrt{2}v_0^2
+[\sin(\pi/4)
+\cos(\phi/2) -
+\cos(\pi/4)
+\sin(\phi/2)]
+[\cos(\frac{\phi}{2}) - \sin(\frac{\phi}{2})]
+}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{\sqrt{2}v_0^2
+[\sqrt{2}/2
+\cos(\phi/2) -
+\sqrt{2}/2
+\sin(\phi/2)]
+[\cos(\frac{\phi}{2}) - \sin(\frac{\phi}{2})]
+}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{v_0^2
+[\cos(\frac{\phi}{2}) - \sin(\frac{\phi}{2})]
+[\cos(\frac{\phi}{2}) - \sin(\frac{\phi}{2})]
+}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{v_0^2
+[\cos^2(\frac{\phi}{2}) - 2\sin(\frac{\phi}{2})\cos(\frac{\phi}{2})+
+\sin^2(\frac{\phi}{2})]
+}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{v_0^2
+[1 - 2\sin(\frac{\phi}{2})\cos(\frac{\phi}{2})]
+}{g\cos^2\phi}
+\\
+R_{max} =& \dfrac{v_0^2
+[1 - \sin\phi]
+}{g\cos^2\phi}
+\\
+\end{align*}
+I think this should be correct but I don't know which trig identity so simplify the expression so what is given in the question, $R_{max} = \frac{v_0^2}{g[1+\sin\phi]}$. 
 
 
 
