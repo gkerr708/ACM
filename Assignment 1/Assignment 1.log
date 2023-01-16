@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  14 JAN 2023 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  15 JAN 2023 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -158,23 +158,27 @@ tex.def
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count274
 \l__pdf_internal_box=\box53
-) (Assignment 1.aux)
+) (Assignment 1.aux
+
+LaTeX Warning: Label `fig_1' multiply defined.
+
+)
 \openout1 = `"Assignment 1.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -235,65 +239,65 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<dal_logo2.png, id=1, 344.28625pt x 147.55125pt>
-File: dal_logo2.png Graphic file (type png)
-<use dal_logo2.png>
-Package pdftex.def Info: dal_logo2.png  used on input line 23.
-(pdftex.def)             Requested size: 223.7834pt x 95.90717pt.
-[1
-
-{C:/Users/gkerr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./dal_logo2.
-png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
 
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
 
 
 (C:\Users\gkerr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
+[1
+
+{C:/Users/gkerr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 60--63
 
  []
 
-[1] [2]
+[2]
 
 pdfTeX warning: pdflatex (file ./fig_1.pdf): PDF inclusion: found PDF version <
 1.6>, but at most version <1.5> allowed
-<fig_1.pdf, id=21, 569.05513pt x 426.79132pt>
+<fig_1.pdf, id=15, 569.05513pt x 426.79132pt>
 File: fig_1.pdf Graphic file (type pdf)
 <use fig_1.pdf>
-Package pdftex.def Info: fig_1.pdf  used on input line 102.
+Package pdftex.def Info: fig_1.pdf  used on input line 97.
 (pdftex.def)             Requested size: 289.07999pt x 216.81409pt.
-[3 <./fig_1.pdf>] [4] [5] [6] (Assignment 1.aux) ) 
+[3 <./fig_1.pdf>] [4] [5]
+<fig_3.png, id=39, 511.15968pt x 395.97937pt>
+File: fig_3.png Graphic file (type png)
+<use fig_3.png>
+Package pdftex.def Info: fig_3.png  used on input line 277.
+(pdftex.def)             Requested size: 289.07999pt x 223.94023pt.
+ [6 <./fig_3.png>] (Assignment 1.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3160 strings out of 476406
- 48286 string characters out of 2789567
- 1878787 words of memory out of 3000000
- 23502 multiletter control sequences out of 15000+600000
- 519049 words of font info for 57 fonts, out of 8000000 for 9000
+ 3171 strings out of 476406
+ 48383 string characters out of 2789567
+ 1880787 words of memory out of 3000000
+ 23513 multiletter control sequences out of 15000+600000
+ 520743 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,62p,308b,227s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/gkerr/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gkerr/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/g
-kerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
-:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr17.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/gkerr/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gkerr/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gkerr/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Assignment 1.pdf" (7 pages, 161628 bytes).
+ 55i,12n,62p,526b,239s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmex10.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><C:/Users/gkerr/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/gkerr/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/gkerr/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/gkerr/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gkerr/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
+gkerr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Assignment 1.pdf" (6 pages, 140400 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

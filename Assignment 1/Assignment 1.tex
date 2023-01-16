@@ -5,46 +5,24 @@
 \usepackage[margin=1.0in]{geometry}
 \linespread{1} 
 
+\title{PHYC 3590 - Advanced Classical Mechanics\\Assignment 1}
+\author{Gavin Kerr\\B00801584}
+\date{2022-01-16}
+
 
 \begin{document}
 
-\begin{titlepage}
-   \begin{center}
-       \vspace*{0.5cm}
-
-       \LARGE{\textbf{Assignment 1}}
-
-       \vspace{1cm}
-        \Large{Advanced Classical Mechanics}
-            
-       \vspace{1cm}
-		\small{Gavin Kerr (B00801584)} \\
-		\vfill
-		\includegraphics[scale=0.65]{dal_logo2.png}
-       \vfill
-           \large{PHYC 3590}
-            
-       \vspace{0.8cm}
-     
-            
-       Physics and Atmospheric Science\\
-       Dalhousie University\\
-       2022-01-16
-            
-   \end{center}
-\end{titlepage}
-
-
+\maketitle
 
 \section*{Question 1.16}
 \subsection*{(a)}
-Show that $|r| = \sqrt{r\cdot r}$. Firstly, let $r = x\hat{x} + y \hat{y} + z \hat{z}$.
+Show that $|r| = \sqrt{r\cdot r}$. 
 \begin{align*}
 r =& x\hat{x} + y \hat{y} + z \hat{z}
 \\
 r\cdot r =& (x\hat{x} + y \hat{y} + z \hat{z})(x\hat{x} + y \hat{y} + z \hat{z})
 \\
-r\cdot r =& x^2 + y^2 + z^2 = r^2
+r\cdot r =& x^2 + y^2 + z^2 
 \\
 r\cdot r =& r^2
 \\
@@ -57,8 +35,17 @@ r\cdot r =& r^2
 \subsection*{(b)}
 Prove that $r\cdot s$, as defined by (1.7), is the same for any choice of orthogonal axes. 
 \begin{align*}
-|r|
+|r+s|^2 =& (r+s)(r+s) 
+\\
+(r+s)(r+s) =& r^2 + 2r\cdot s + s^2
+\\
+|r+s|^2 =& r^2 + 2r\cdot s + s^2
+\\
+2r\cdot s =& |r+s|^2 - r^2 - s^2
+\\
+r\cdot s =& \tfrac{1}{2}(|r+s|^2 - r^2 - s^2)
 \end{align*}
+All of the terms are squared therefore there are all independent of the angle. 
 
 
 
@@ -66,11 +53,11 @@ Prove that $r\cdot s$, as defined by (1.7), is the same for any choice of orthog
 
 \section*{Problem 1.26}
 \subsection*{(a)}
-For $S$ we have $x=0, y=v_1t$, where $v_1$ is the speed at which the man kicks the puck.
+Assuming the puck is kicked so that the position of the puck is the same as the observer at $t=0$, we have $x=0, y=v_0t$, where $v_0$ is the initial speed at which the man kicks the puck.
 \subsection*{(b)}
-For $S'$ relative to $S$ we have $x=v_2t, y=0$, where $v_2$ is the speed of the second observer relative to the first observer ($S$). In the $S'$ frame, the path of the puck would be $x'= x_1-v_2t, y'=y_1 +v_1t$. $(x_1, y_1)$ is the distance between observer 1 \& 2. 
+For $S'$ relative to $S$ we have $x=v_1t, y=0$, where $v_1$ is the speed of the second observer relative to the first observer ($S$). In the $S'$ frame, the path of the puck would be $x'= -v_1t, \, y'=v_0t$. 
 \subsection*{(c)}
-For $S''$ relative to $S$, we have $x=\tfrac{1}{2}at^2, y=0$, where $a$ is the acceleration of the third observer. In the $S''$ frame, the puck follows the path $x=x_2-\tfrac{1}{2}at^2 y=y_2+v_1t$. $(x_2,y_2)$ is the distance between the first \& third observer.\\
+For $S''$ relative to $S$, we have $x=\tfrac{1}{2}at^2, \, y=0$, where $a$ is the acceleration of the third observer. In the $S''$ frame, the puck follows the path $x''=-\tfrac{1}{2}at^2, \, y''=v_1t$.\\
 \\
 The $S$ and $S'$ are inertial reference frames. $S''$ is not an inertial reference frame because it is accelerating.
 
@@ -79,12 +66,20 @@ The $S$ and $S'$ are inertial reference frames. $S''$ is not an inertial referen
 
 
 \section*{Problem 1.31}
-I think this question needs more. 
+If there is no acceleration and no change in masses then the momentum of the system, $p_1 + p_2$ is constant. This gives
+\begin{align}
+p_1 + p_2 =& c
+\\
+\frac{dp_1}{dt} + \frac{dp_2}{dt} =& \frac{dc}{dt} = 0 \label{equation1}
+\end{align}
+From equation (1.21) in Taylor we have:
+\begin{align}
+\dot{p_1} =& F_1 = F_{12} \label{f12}
+\\
+\dot{p_2} =& F_2 = F_{21} \label{f21}
+\end{align}
+Subbing equations (\ref{f12}) and (\ref{f21}) into equation (\ref{equation1}) gives
 \begin{align*}
-P_1 + P_2 =& c
-\\
-\frac{dP_1}{dt} + \frac{dP_2}{dt} =& \frac{dc}{dt}
-\\
 F_1 + F_2 =& 0
 \\
 F_1 =& - F_2
@@ -181,7 +176,7 @@ To solve for $R_{max}$ we need to find a local max for $R$ as a function of $\th
 \\
 \pi/2 - \phi =& 2\theta
 \\
-\theta_{max} =& \frac{\pi-2\phi}{4}
+\theta_{max} =& \boxed{\frac{\pi-2\phi}{4}}
 \end{align*}
 Next, we just sub $\theta$ into the equation for $R$ to find the maximum distance.
 \begin{align*}
@@ -253,17 +248,37 @@ R_{max} =& \dfrac{v_0^2
 [1 - \sin\phi]
 }{g\cos^2\phi}
 \\
+R_{max} =& \dfrac{v_0^2
+[1 - \sin\phi]
+}{g(1-\sin^2\phi)}
+\\
+R_{max} =& \dfrac{v_0^2
+[1 - \sin\phi]
+}{g(1-\sin\phi)(1+\sin\phi)}
+\\
+R_{max} =& \boxed{\dfrac{v_0^2}{g(1+\sin\phi)}}
+\\
+&\text{QED}
 \end{align*}
-I think this should be correct but I don't know which trig identity so simplify the expression so what is given in the question, $R_{max} = \frac{v_0^2}{g[1+\sin\phi]}$. 
+
 
 
 
 
 \pagebreak
 \section*{Problem 1.46}
-\begin{align*}
-...
-\end{align*}
+\subsection*{(a)}
+I don't think it's stated which direction the puck is going so we will say that the puck starts off on the west most edge of the table ($-R$) and travels east through the center of the circle. In the frame $S$, we have the equation of motion $\boxed{\vec{r} =  (v_0 - R)\hat{r} + 0\hat{\phi}}$, where $R$ is the radius of the table and $v_0$ in the initial velocity.  
+
+\subsection*{(b)}
+For the $S'$ position we have the puck starting at the same position as before, $-R$. The $\hat{r}$ vector will remain the same as the table spinning will not affect the distance between the center of the table and the puck. There will, however, be a change in the angular velocity. For the frame $S'$, there is a constant angular velocity we will call $\omega$. Combining these results, we have the equation for motion: $\boxed{\vec{v} = (v_0 - R)\,\hat{r} + \omega t \,\hat{\phi}}$.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{fig_3.png}
+  \caption{Shows the path of the puck from the $S'$ reference frame.}
+  \label{fig_1}
+\end{figure}
+
 
 
 
