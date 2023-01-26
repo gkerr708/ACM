@@ -1,0 +1,143 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage[margin=1.0in]{geometry}
+\DeclareMathOperator\arctanh{arctanh}
+\linespread{1} 
+
+\title{PHYC 3590 - Advanced Classical Mechanics\\Assignment 3}
+\author{Gavin Kerr\\B00801584}
+\date{2022-01-31}
+
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Problem 3.5}
+\begin{align}
+\vec{p_1} + \vec{p_2} =& \vec{p_1}' + \vec{p_2}'
+\\
+\vec{v_2} =& \, \vec{p_2} = 0
+\\
+m_1\vec{v_1} =& m_1\vec{v_1}' + m_2\vec{v_2}' \label{eq1}
+\end{align}
+\begin{align}
+\tfrac{1}{2}m_1v_1^2 + \tfrac{1}{2}m_2v_2^2 =& \tfrac{1}{2}m_1v_1^{'2} + \tfrac{1}{2}m_2v_2^{'2}
+\\
+v_2 =& 0
+\\
+m_1v_1^2 =& m_1v_1^{'2} + m_2v_2^{'2} 
+\\
+m_1 =& m_2
+\\
+v_1^2 =& v_1^{'2} + v_2^{'2} \label{eq2}
+\\
+\end{align}
+From equation (\ref{eq1}) we have
+\begin{align}
+m_1\vec{v_1} =& m_1\vec{v_1}' + m_2\vec{v_2}' 
+\\
+m_1^2\vec{v_1}^2 =& (m_1\vec{v_1}' + m_2\vec{v_2}')^2 
+\\
+m_1^2\vec{v_1}^2 =& m_1^2 \vec{v_1}'^2  + m_2^2 \vec{v_2}'^2 + 2m_1m_2\vec{v_1}'\cdot\vec{v_2}'
+\\
+m_1 =& m_2 = m
+\\
+\vec{v_1}^2 =& \vec{v_1}'^2  + \vec{v_2}'^2 + 2\vec{v_1}'\cdot\vec{v_2}' \label{eq3}
+\end{align}
+Equating equation (\ref{eq2}) and (\ref{eq3}) we find
+\begin{align*}
+v_1^{'2} + v_2^{'2} =& \vec{v_1}'^2  + \vec{v_2}'^2 + 2\vec{v_1}'\cdot\vec{v_2}'
+\\
+\vec{v_1}'\cdot\vec{v_2}' =& 0
+\\
+|v_1'| \cdot |v_2'| \cos\theta =& 0
+\\
+\theta =& \boxed{90^o}
+\end{align*}
+
+
+
+
+\pagebreak
+\section*{Problem 3.11}
+\subsection*{(a)}
+Show that the equation of motion is $m\dot{v} = -\dot{m}v_{ex} + F^{ext}$.
+\begin{align*}
+dP =& m \,dv + dm \, v_{ex}
+\\
+\dot{P} =& \frac{dP}{dt} = F^{ext}
+\\
+dP =& F^{ext}dt
+\\
+F^{ext}dt =& m \,dv + dm \, v_{ex}
+\\
+F^{ext} =& m \frac{dv}{dt} + \frac{dm}{dt} v_{ex}
+\\
+m\dot{v} =& -\dot{m}v_{ex} + F^{ext}
+\\
+&\text{QED}
+\end{align*}
+\subsection*{(b)}
+\begin{align*}
+m\dot{v} =& -\dot{m}v_{ex} - mg
+\\
+m\dot{v} =& kv_{ex} - (m_0-kt)g
+\\
+m\frac{dv}{dt} =& kv_{ex} - (m_0-kt)g
+\\
+dv =& \frac{kv_{ex} - m_0g + ktg}{m} \, dt
+\end{align*}
+\subsection*{(c)}
+\begin{align*}
+...
+\end{align*}
+\subsection*{(d)}
+\begin{align*}
+...
+\end{align*}
+
+
+
+\pagebreak
+\section*{Problem 3.21}
+
+
+
+
+\pagebreak
+\section*{Problem 3.27}
+
+
+
+
+\pagebreak
+\section*{Problem 3.32}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
