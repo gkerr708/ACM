@@ -152,9 +152,35 @@ l =& r\hat{r} \times m r\omega\hat{\phi}
 l =&  \boxed{ m r^2\omega(\hat{r}\times\hat{\phi}) }
 \end{align*}
 \subsection*{(b)}
+Show that $\frac{dA}{dt} = \tfrac{1}{2}r^2\omega = \frac{l}{2m}$. 
+Ler $r$ be the distance between the planet and the sun, let x be the 
+distance the planet is traveling perpendicular to r. 
 \begin{align*}
-\dots &
+A =& \frac{1}{2} r  x
+\\
+dA =& \frac{1}{2} r \, dx
+\\
+x =& r\sin\phi
+\\
+dx =& r\, d\phi
+\\
+dA =& \frac{1}{2} r \,  r\, d\phi
+\\
+\frac{dA}{dt} =& \frac{1}{2} r^2 \frac{d\phi}{dt}
+\\
+\frac{dA}{dt} =& \boxed{\frac{1}{2} r^2 \omega}
 \end{align*}
+From part (a) we have 
+\begin{align}
+l =&  m r^2\omega
+\\
+\frac{l}{2m} =&  \frac{1}{2} r^2\omega
+\\
+\frac{dA}{dt} =& \frac{1}{2} r^2 \omega
+\\
+\frac{dA}{dt} =&\boxed{\frac{l}{2m}}
+\end{align}
+
 
 
 
@@ -163,20 +189,30 @@ l =&  \boxed{ m r^2\omega(\hat{r}\times\hat{\phi}) }
 \pagebreak
 \section*{Problem 3.32}
 \begin{align*}
-L_z =& I\omega
-\\
 I =& \sum m_\alpha \rho_\alpha^2
 \\
-I =& \int_v \textit{Density} \cdot \rho_\alpha^2 \, dV
+I =& \int_v \textit{Density} \cdot \rho^2 \, dV
 \\
-I =& \int_v \frac{m}{V} r^2 dr \sin\theta d\theta d\phi
+I =& \int_v \frac{m}{V}  \rho^2 \, r^2 dr \sin\theta d\theta d\phi
 \\
-I =& \int_v \frac{3m}{4\pi R^3} r^2 dr \sin\theta d\theta d\phi
+I =& \int_v \frac{3m}{4\pi R^3} \rho^2 \, r^2 dr \sin\theta d\theta d\phi
 \\
-I =& \frac{3m}{4\pi R^3} \int_0^R r^2 dr 
-\int_0^\pi\sin\theta d\theta d\phi
+\rho^2 =& (r_r\hat{r} + r_\theta\hat{\theta} + r_\phi\hat{\phi})^2 
+= r_r^2 + r_\theta^2 + r_\phi^2 = r^2
+\\
+I =& \int_v \frac{3m}{4\pi R^3} r^2 \, r^2 dr \sin\theta d\theta d\phi
+\\
+I =& \frac{3m}{4\pi R^3}
+\int_0^R  r^4 dr 
+\int_0^\pi\sin\theta d\theta 
+\int_0^{2\pi} d\phi
+\\
+I =& \frac{3m}{4\pi R^3}(R^5/5) (-\cos\pi)(2\pi)
+\\
+I =& \tfrac{3}{10}mR^2
 \\
 \end{align*}
+
 
 
 
