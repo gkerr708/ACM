@@ -6,7 +6,7 @@
 \DeclareMathOperator\arctanh{arctanh}
 \linespread{1} 
 
-\title{PHYC 3590 - Advanced Classical Mechanics\\Assignment 3}
+\title{PHYC 3590xx - Advanced Classical Mechanics\\Assignment 3}
 \author{Gavin Kerr\\B00801584}
 \date{2022-01-31}
 
@@ -83,14 +83,15 @@ m\dot{v} =& -\dot{m}v_{ex} + F^{ext}
 \end{align*}
 \subsection*{(b)}
 \begin{align*}
-m\dot{v} =& -\dot{m}v_{ex} - mg
-\\
-m\dot{v} =& kv_{ex} - (m_0-kt)g
-\\
-m\frac{dv}{dt} =& kv_{ex} - (m_0-kt)g
-\\
-dv =& \frac{kv_{ex} - m_0g + ktg}{m} \, dt
+    m\dot{v} =& -\dot{m}v_{ex} - mg
+    \\
+    m\dot{v} =& kv_{ex} - (m_0-kt)g
+    \\
+    m\frac{dv}{dt} =& kv_{ex} - (m_0-kt)g
+    \\
+    dv =& \frac{kv_{ex} - m_0g + ktg}{m} \, dt
 \end{align*}
+I am not sure how to finishe this problem. 
 \subsection*{(c)}
 \begin{align*}
 ...
@@ -104,19 +105,78 @@ dv =& \frac{kv_{ex} - m_0g + ktg}{m} \, dt
 
 \pagebreak
 \section*{Problem 3.21}
+\begin{align*}
+CM =& \int r\sigma dA 
+\\
+\sigma  =& \frac{m}{A} = \frac{m}{\pi R^2}
+\\
+dA =& r \, dr  \, d\theta
+\\
+CM =& \int\int  \frac{m}{\pi R^2} r^2 \, dr  \, d\theta 
+\\
+CM =& \frac{m}{\pi R^2} \int_0^R r^2  dr  \int_0^{2\pi} d\theta 
+\\
+CM =& \frac{m}{\pi R^2} (R^3/3) (2\pi)
+\\
+CM =& \boxed{\frac{2mR}{3}}
+\end{align*}
+
 
 
 
 
 \pagebreak
 \section*{Problem 3.27}
+\subsection*{(a)}
+\begin{align*}
+l =& \vec{r} \times \vec{p}
+\\
+\vec{p} =& m\vec{v}
+\\
+l =& \vec{r} \times m\vec{v}
+\\
+\vec{v} =& \frac{d\vec{r}}{dt} = \dot{r}\hat{r} + r\dot{\phi}\hat{\phi}
+\\
+l =& \vec{r} \times m(\dot{r}\hat{r} + r\dot{\phi}\hat{\phi})
+\\
+l =& r\hat{r} \times m(\dot{r}\hat{r} + r\dot{\phi}\hat{\phi})
+\\
+l =& r\hat{r} \times m(\dot{r}\hat{r} + r\dot{\phi}\hat{\phi})
+\\
+l =& r\hat{r} \times m r\dot{\phi}\hat{\phi}
+\\
+\omega =& \dot{\phi}
+\\
+l =& r\hat{r} \times m r\omega\hat{\phi}
+\\
+l =&  \boxed{ m r^2\omega(\hat{r}\times\hat{\phi}) }
+\end{align*}
+\subsection*{(b)}
+\begin{align*}
+\dots &
+\end{align*}
+
 
 
 
 
 \pagebreak
 \section*{Problem 3.32}
-
+\begin{align*}
+L_z =& I\omega
+\\
+I =& \sum m_\alpha \rho_\alpha^2
+\\
+I =& \int_v \textit{Density} \cdot \rho_\alpha^2 \, dV
+\\
+I =& \int_v \frac{m}{V} r^2 dr \sin\theta d\theta d\phi
+\\
+I =& \int_v \frac{3m}{4\pi R^3} r^2 dr \sin\theta d\theta d\phi
+\\
+I =& \frac{3m}{4\pi R^3} \int_0^R r^2 dr 
+\int_0^\pi\sin\theta d\theta d\phi
+\\
+\end{align*}
 
 
 
