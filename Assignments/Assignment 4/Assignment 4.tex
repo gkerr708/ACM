@@ -96,7 +96,30 @@ W =& \boxed{\frac{19}{21}}
 
 \pagebreak
 \section*{Problem 4.8}
-
+\begin{align*}
+\vec{F} =& \vec{W} + \vec{N}
+\end{align*}
+In the $\hat{x}$ vector we have:
+\begin{align*}
+F_x =&  mg\sin\theta
+\end{align*}
+In the $\hat{y}$ vector we have:
+\begin{align*}
+F_y =& mg + mg\cos\theta
+\end{align*}
+For the total energy of the puck we have
+\begin{align*}
+E =& mgR
+\\
+E =& T + U
+\\
+U =& mgh = mgR\cos\theta
+\\
+T =& \tfrac{1}{2}mv^2
+\\
+mgR =& \tfrac{1}{2}mv^2 - mgR\cos\theta 
+\\
+\end{align*}
 
 
 
@@ -108,6 +131,20 @@ W =& \boxed{\frac{19}{21}}
 
 \pagebreak
 \section*{Problem 4.22}
+The goad of this problem is to prove that the Couolomp force  is conservative.
+\begin{align*}
+\vec{F} =& \frac{\gamma}{r^2}\hat{r}
+\\
+\Delta \times F  =& 
+\frac{1}{r\sin\theta}\left[\frac{\partial}{\partial\theta}(\sin\theta F_\phi)-\frac{\partial}{\partial\phi}F_\phi\right]\hat{r} 
++\left[\frac{1}{r\sin\theta}\frac{\partial}{\partial\phi}F_r-\frac{1}{r}\frac{\partial}{\partial r}(rF_\phi)\right]\hat{\theta} 
+\\
++& \frac{1}{r}\left[\frac{\partial}{\partial r}(rF_\theta)-\frac{\partial}{\partial\theta}F_r\right]\hat{\phi}
+\end{align*}
+$\vec{F}$ is equal zero in the $\hat{\theta}$ and $\hat{\phi}$ direction so all terms containing $F_\phi$, $F_\theta$, $\frac{\partial}{\partial \theta}$, $\frac{\partial}{\partial\phi}$ go to zero. Every term contains at least of of these listed elements, therefore
+\begin{align*}
+\Delta \times F =& 0
+\end{align*} 
 
 
 
