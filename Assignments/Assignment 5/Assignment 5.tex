@@ -13,22 +13,76 @@
 \begin{document}
 
 \maketitle
-The questions for this assignment are 6.1, 6.3, 6.4, 6.5.
 
-\section{Question 6.1}
-Use spherical polar coordinates (r, $\theta$, $\phi$) to show that the length of a path joining two points on a
-sphere of radius R is
-\begin{align}
-L =& R\int_{\theta_1}^{\theta_2}\sqrt{1+\sin^2\theta\phi'(\theta)^2}d\theta
-\end{align}
-\begin{align}
-L = \int_1^2ds
+
+
+\section*{Question 6.3}
+\begin{align*}
+\tau =& s/c
 \\
-s = r\sin(\theta) \phi
-\end{align}
+P_1 =& (0, y_1 , 0), \,\, Q = (x, 0, z), \,\, P_2 = (x_2 , y_2 , 0).
+\\
+|P_1 \rightarrow Q| =& |Q-P_1|  = \sqrt{(x-0)^2+(0-y_1)^2+(z-0)^2}
+\\
+|Q \rightarrow P_2| =& |P_2-Q|  = \sqrt{(x_2-x)^2+(y_2-0)^2+(0-z)^2}
+\\
+s =& |P_1\rightarrow P_2| = \sqrt{x^2+y_1^2+z^2} + \sqrt{(x_2-x)^2+y_2^2+z^2}
+\\
+\tau =& \boxed{\frac{\sqrt{x^2+y_1^2+z^2} + \sqrt{(x_2-x)^2+y_2^2+z^2}}{c}}
+\end{align*}
+We know that $\tau$ is a minimums with respect to the variable $z$ when $\frac{dz}{dt}=0$.
+\begin{align*}
+\frac{\partial \tau}{\partial z} =& \frac{z}{c\sqrt{x^2+y_1^2+z^2}} + \frac{z}{c\sqrt{(x_2-x)^2+y_2^2+z^2}} = 0
+\\
+&\boxed{z=0}
+\end{align*}
+Therefore $\tau$ is minimized at $z=0$.
+\begin{align*}
+\frac{\partial \tau}{\partial z} =& \frac{z}{c\sqrt{x^2+y_1^2+z^2}} + \frac{x_2-x}{c\sqrt{(x_2-x)^2+y_2^2+z^2}} = 0
+\\
+\frac{\partial \tau}{\partial z} =& \frac{\sin\theta_1}{c\sqrt{x^2+y_1^2+z^2}} + \frac{\sin\theta_2}{c\sqrt{(x_2-x)^2+y_2^2+z^2}} = 0
+\\
+&\boxed{\theta_1 = \theta_2}
+\end{align*}
 
 
 
+
+
+
+\section*{Question 6.4}
+\begin{align*}
+L =& \int_{P_1}^{P_2}ds = \int_{P_1}^{Q}ds + \int_{Q}^{P_2}ds
+\\	
+\tau =& \frac{n_1\sqrt{x^2+y_1^2+z^2} + n_2\sqrt{(x_2-x)^2+y_2^2+z^2}}{c}
+\\
+\frac{\partial\tau}{\partial z} =& \frac{n_1z}{c\sqrt{x^2+y_1^2+z^2}} + \frac{n_2z}{c\sqrt{(x_2-x)^2+y_2^2+z^2}} = 0
+\\
+&\boxed{z=0}
+\end{align*}
+\begin{align*}
+\frac{\partial\tau}{\partial x} =& \frac{n_1x}{c\sqrt{x^2+y_1^2+z^2}} + \frac{n_2(x_2-x)}{c\sqrt{(x_2-x)^2+y_2^2+z^2}} 
+\\
+0 =& \frac{n_1\sin\theta_1}{c\sqrt{x^2+y_1^2+z^2}} + \frac{n_2\sin\theta_2}{c\sqrt{(x_2-x)^2+y_2^2+z^2}}
+\\
+&\boxed{n_1\sin\theta_1 = n_2\sin\theta_2}
+\end{align*}
+
+
+
+
+
+
+
+\section*{Question 6.5}
+\begin{align*}
+APB =& 2R\sin\left(\frac{\pi}{4}-\frac{\theta}{2}\right) + 2R\sin\left(\frac{\pi}{4}+\frac{\theta}{2}\right)
+\\
+\tau =& \frac{APB}{c}
+\\
+\tau =& \frac{2R\sin\left(\frac{\pi}{4}-\frac{\theta}{2}\right) + 2R\sin\left(\frac{\pi}{4}+\frac{\theta}{2}\right)}{c}
+\end{align*}
+$\tau$ is minimized for $\theta=0$ where $P = P_0$.
 
 
 
