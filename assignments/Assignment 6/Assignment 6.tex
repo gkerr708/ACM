@@ -23,8 +23,8 @@ From problem 6.1 we have $L = R\int_{\theta_1}^{\theta_2}\sqrt{1+\sin^2\theta\ph
 \frac{\partial f}{\partial\phi'} =& \frac{\sin^2\theta\phi'}{\sqrt{1+\sin^2\theta\phi'(\theta)^2}}
 \\
 \frac{\sin^2\theta\phi'}{\sqrt{1+\sin^2\theta\phi'(\theta)^2}} =& c
-\\
 \end{align*}
+I don't think I fully understand this but choosing the z axis to pass through point one where $\theta = 0$.
 
 
 \section{6.19}
@@ -41,7 +41,8 @@ f =& y\sqrt{1+x'(y)^2}
 y_0 =& \frac{\partial f}{\partial x'}
 \\
 y_0 =& \frac{\partial }{\partial x'}y\sqrt{1+x'^2}
-\\
+\end{align*}
+\begin{align*}
 y_0 =& y\frac{x'}{\sqrt{1+x'^2}}
 \\
 y_0^2(1+x'^2) =& y^2x'^2
@@ -55,10 +56,8 @@ y_0^2 =& (y^2 - y_0^2)x'^2
 x' = \frac{y_0}{\sqrt{y^2 - y_0^2}}
 \\
 \end{align*}
-I am not sure how to simplify this too the desired equation
+I am not sure how to simplify this too the desired equation.
 
-
-\pagebreak
 \section{6.27}
 \begin{align*}
 L =& \int ds
@@ -96,12 +95,155 @@ These derivatives are all equal to a constant, therefore $x'$, $y'$ and $z'$ are
 
 \pagebreak
 \section{7.1}
+\begin{align*}
+T =& \frac{1}{2}m(\dot{x}^2+\dot{y}^2+\dot{z}^2) 
+\\
+U =& mgz
+\\
+L =& T - U
+\\
+L =& \frac{1}{2}m(\dot{x}^2+\dot{y}^2+\dot{z}^2) - mgz
+\\
+\frac{\partial L}{\partial x} =& \frac{d}{dt}\frac{\partial L}{\partial\dot{x}} = 0
+\\
+\frac{\partial L}{\partial y} =& \frac{d}{dt}\frac{\partial L}{\partial\dot{y}} = 0
+\\
+\frac{\partial L}{\partial z} =& \frac{d}{dt}\frac{\partial L}{\partial\dot{z}}
+\\
+-mg =& \frac{d}{dt}(m\dot{x})
+\\
+-mg =& m\ddot{x}
+\\
+-g =& \ddot{x}
+\end{align*}
+From Newtonian mechanics, you would say that the gravity is the only force acting on the object so the equation would become $F = -mg$, from Newton's second law we have $F = m\ddot{x}$. Combining these two equations, we find the same equation derived above $-mg = m\ddot{x}$.
 
 
 \section{7.4}
+Using Lagrangian mechanics we have
+\begin{align*}
+U =& mgh = mgy\sin\alpha
+\\
+T =& \frac{1}{2}m(\dot{x}^2+\dot{y}^2)
+\\
+L =& \frac{1}{2}m(\dot{x}^2+\dot{y}^2) - mgy\sin\alpha
+\\
+\frac{\partial L}{\partial x} =& \frac{d}{dt}\frac{\partial L}{\partial\dot{x}}
+\\
+0 =& \frac{d}{dt}(m\dot{x})
+\\
+&\boxed{m\ddot{x} = 0}
+\\
+\frac{\partial L}{\partial y} =& \frac{d}{dt}\frac{\partial L}{\partial\dot{y}}
+\\
+-mg\sin\alpha =& \frac{d}{dt}(m\dot{y})
+\\
+&\boxed{m\ddot{y} = -mg\sin\alpha}
+\end{align*}
+Using Newtonian mechanics we have
+\begin{align}
+F =& m\ddot{y}
+\\
+F =& -mg\sin\alpha
+\\
+m\ddot{y} =& -mg\sin\alpha
+\end{align}
+The solution using Lagrangian mechanics agrees with the Newtonian solution.
+
 
 
 \section{7.8}
+\subsection{(a)}
+\begin{align*}
+U =& \tfrac{1}{2}kx^2 = \tfrac{1}{2}k(x_1-x_2-l)^2
+\\
+T =& \tfrac{1}{2}m\dot{x_1}^2 + \tfrac{1}{2}m\dot{x_2}^2
+\\
+L =& \tfrac{1}{2}m\dot{x_1}^2 + \tfrac{1}{2}m\dot{x_2}^2 - \tfrac{1}{2}k(x_1-x_2-l)^2
+\end{align*}
+\subsection{(b)}
+\begin{align*}
+X =& \tfrac{1}{2}(x_1 + x_2)
+\\
+x =& x_1-x_2-l
+\\
+x_2 =& x_1-x-l
+\\
+X =& \tfrac{1}{2}(x_1 + x_1-x-l)
+\\
+x_1 =& \boxed{X + \tfrac{1}{2}(x+l)}
+\\
+x_1 =& x_2+x+l
+\\
+X =& \tfrac{1}{2}(x_2 + x + l + x_2)
+\\
+x_2 =& \boxed{X - \tfrac{1}{2}(x + l)}
+\\
+L =& 
+\tfrac{1}{2}m(\dot{X} + \tfrac{1}{2}\dot{x})^2 + 
+\tfrac{1}{2}m(\dot{X} - \tfrac{1}{2}\dot{x})^2 - 
+\tfrac{1}{2}k[X - \tfrac{1}{2}(x + l)- X + \tfrac{1}{2}(x + l) - l]^2
+\\
+L =& 
+\tfrac{1}{2}m(\dot{X} + \tfrac{1}{2}\dot{x})^2 + 
+\tfrac{1}{2}m(\dot{X} - \tfrac{1}{2}\dot{x})^2 - 
+\tfrac{1}{2}kx^2
+\\
+L =& 
+\tfrac{1}{2}m(\dot{X}^2 + \tfrac{1}{2}\dot{x}\dot{X} + \tfrac{1}{2}\dot{x}^2) + 
+\tfrac{1}{2}m(\dot{X}^2 - \tfrac{1}{2}\dot{x}\dot{X} + \tfrac{1}{2}\dot{x}^2) - 
+\tfrac{1}{2}kx^2
+\\
+L =& 
+\tfrac{1}{2}m(\dot{X}^2 + \tfrac{1}{2}\dot{x}^2) + 
+\tfrac{1}{2}m(\dot{X}^2 + \tfrac{1}{2}\dot{x}^2) - 
+\tfrac{1}{2}kx^2
+\\
+L =& \boxed{m\dot{X}^2 + \tfrac{1}{4}m\dot{x}^2 - \tfrac{1}{2}kx^2}
+\end{align*}
+\begin{align*}
+\frac{\partial L}{\partial X} =& \frac{d}{dt}\frac{\partial L}{\partial\dot{X}}
+\\
+0 =& 2m\ddot{X}
+\\
+\frac{\partial L}{\partial x} =& \frac{d}{dt}\frac{\partial L}{\partial\dot{x}}
+\\
+-kx =& \frac{1}{2}m\ddot{x}
+\\
+\end{align*}
+\subsection{(c)}
+\begin{align}
+0 =& 2m\ddot{X}
+\\
+\dot{X} =& V
+\\
+X =& Vt + V_0
+\end{align}
+This solution says that $X$ is changing with a constant velocity, $V$.
+\begin{align*}
+0 =& \ddot{x} + \frac{2k}{m}x
+\\
+&\text{has a general solution of}
+\\
+x =& A\cos\left(\sqrt{\frac{2k}{m}}t\right) + B\sin\left(\sqrt{\frac{2k}{m}}t\right)
+\end{align*}
+The solution says that $x$ is oscillating.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
