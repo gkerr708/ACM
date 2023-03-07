@@ -1,0 +1,177 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{amsfonts, amssymb,amsmath,float,wrapfig}
+\usepackage{graphicx,dsfont,subfiles,hyperref,enumitem,apacite}
+\usepackage[margin=1.0in]{geometry}
+\linespread{1} 
+
+\title{PHYC 3590 - Advanced Classical Mechanics\\Assignment 7}
+\author{Gavin Kerr\\B00801584}
+\date{2023-03-05}
+
+
+\begin{document}
+\maketitle
+\section*{Problem 7.14}
+\begin{align*}
+T =& \tfrac{1}{2}m\dot{x}^2 + \tfrac{1}{2}I\omega^2
+\\
+T =& \tfrac{1}{2}m\dot{x}^2 + \tfrac{1}{2}(\tfrac{1}{2}mR^2)\omega^2
+\\
+\dot{x} =& R \omega, \,\,\, \dot{x}/R = \omega
+\\
+T =& \tfrac{1}{2}m\dot{x}^2 + mR^2(\dot{x}/R)^2
+\\
+T =& \tfrac{1}{2}m\dot{x}^2 + m\dot{x}^2 = \boxed{\tfrac{3}{4}m\dot{x}^2}
+\\
+U =& mgx
+\\
+L =& \tfrac{3}{4}m\dot{x}^2 - mgx
+\end{align*}
+\begin{align*}
+\frac{dL}{dx} =& \frac{d}{dt}\frac{dL}{d\dot{x}}
+\\
+-mg =& \frac{d}{dt}\frac{3}{2}m\dot{x}
+\\
+-mg =& \frac{3}{2}m\ddot{x}
+\\
+\ddot{x} =& \boxed{-\frac{2}{3}g}
+\\
+&\text{QED}
+\end{align*}
+\pagebreak
+\section*{Problem 7.27}
+\begin{align*}
+T =& \tfrac{1}{2}(4m)\dot{x_1}^2  + \tfrac{1}{2}(3m)\dot{x_2}^2  + \tfrac{1}{2}(m)\dot{x_3}^2  
+\end{align*}
+where $x_1$ is the position of mass $4m$, $x_2$ is the position of mass $3m$, $x_3$ is the position of mass $m$, $l_1$ is the length of rope attached to $4m$, and $l_2$ is the length of rope attached to $2m$ and $3m$. 
+\begin{align*}
+x_2 =& l_1-x_1+h, \,\,\, x_3 = l_1-x_1+l_2-h
+\\
+\dot{x}_2 =& -\dot{x}_1+\dot{h}, \,\,\, \dot{x}_3 = -\dot{x}_1-\dot{h}
+\\
+\end{align*}
+\begin{align*}
+T =& 
+\tfrac{1}{2}(4m)\dot{x}_1^2  + 
+\tfrac{1}{2}(3m)(-\dot{x}_1 + \dot{h})^2  + 
+\tfrac{1}{2}( m)( \dot{x}_1 + \dot{h})^2  
+\\
+T =& 
+\tfrac{1}{2}(4m)\dot{h_1}^2  + 
+\tfrac{1}{2}(3m)(\dot{x}_1^2 - 2\dot{x}_1\dot{h} + \dot{h}^2) + 
+\tfrac{1}{2}( m)(\dot{x}_1^2 + 2\dot{x}_1\dot{h} + \dot{h}^2) 
+\\
+T =& 
+\tfrac{1}{2}(4m)\dot{h_1}^2 + \tfrac{1}{2}m[
+3\dot{x}_1^2 - 6\dot{x}_1\dot{h} + 3\dot{h}^2 + 
+ \dot{x}_1^2 + 2\dot{x}_1\dot{h} +  \dot{h}_2^2 ]
+\\
+T =& 
+\tfrac{1}{2}(4m)\dot{x_1}^2 + \tfrac{1}{2}m[
+4\dot{x}_1^2 - 4\dot{x}_1\dot{h} + 4\dot{h}^2]
+\\
+T =& \tfrac{1}{2}(4m)\dot{x_1}^2 + 2m[\dot{x}_1^2 - \dot{x}_1\dot{h} + \dot{h}^2]
+\end{align*}
+\begin{align*}
+U =& 4mgx_1 + 3mgx_2 + mgx_3
+\\
+U =& mg(4x_1 + 3(l_1-x_1+h) + l_1-x_1+l_2-h)
+\\
+U =& mg(4l_1 + 2h + l_2)
+\end{align*}
+\begin{align*}
+L =& \tfrac{1}{2}(4m)\dot{x_1}^2 + 2m[\dot{x}_1^2 - \dot{x}_1\dot{h} + \dot{h}^2] - mg(4l_1 + 2h + l_2)
+\end{align*}
+\begin{align*}
+&\frac{dL}{dx_1} = \frac{d}{dt}\frac{dL}{d\dot{x}_1}
+&\frac{dL}{dh} = \frac{d}{dt}\frac{dL}{d\dot{h}}
+\\
+&\frac{dL}{dx_1} = 0 
+&\frac{dL}{dh} = -2mg
+\\
+&\frac{d}{dt}\frac{dL}{d\dot{x}_1} = 4m\ddot{x}_1 + 4m\ddot{x}_1 - 2m\ddot{h}
+&\frac{d}{dt}\frac{dL}{d\dot{h}} = 4m\ddot{h} - 2m\ddot{x}_1 
+\\
+&\boxed{4m\ddot{x}_1 =  m\ddot{h}}
+&\boxed{mg =  m\ddot{x}_1 - 2m\ddot{h} }
+\end{align*}
+\begin{align*}
+mg =&  m\ddot{x}_1 - 2m(4\ddot{x}_1) 
+\\
+mg =& - 7m\ddot{x_1} 
+\\
+&\boxed{\ddot{x}_1 = -g/7}
+\end{align*}
+\pagebreak
+\section*{Problem 7.29}
+\begin{align*}
+\vec{P} =& R\omega t = R\cos(\omega t)\hat{x} + R\sin(\omega t)\hat{y}
+\\
+\vec{B'} =& \text{The position of the bob relative to $\vec{P}$ is}
+\\
+\vec{B'} =& L(\phi-3\pi/2) = L\sin\phi\hat{x} - L\cos\phi\hat{y}
+\\
+\vec{B} =& \text{The position of the bob relative to $\vec{O}$ is}
+\\
+\vec{B} =& (R\cos(\omega t)+L\sin\phi)\hat{x} + (R\sin(\omega t)-L\cos\phi)\hat{y}
+\\
+\dot{x} =& \frac{d}{dt}(R\cos(\omega t)+L\sin\phi) = -\omega R\sin(\omega t) + \dot{\phi}L\cos\phi
+\\
+\dot{y} =& \frac{d}{dt}(R\sin(\omega t)-L\cos\phi) = \omega R\cos(\omega t) + \dot{\phi}L\sin\phi
+\end{align*}
+\begin{align*}
+T =& \tfrac{1}{2}m(\dot{x}^2+\dot{y}^2)
+\\
+T =& \tfrac{1}{2}m((-\omega R\sin(\omega t) + \dot{\phi}L\cos\phi)^2+(\omega R\cos(\omega t) + \dot{\phi}L\sin\phi)^2)
+\\
+T =& \tfrac{1}{2}m(
+\omega^2R^2\sin^2(\omega t) - 2\omega\dot{\phi}LR\cos\phi\sin\omega t + \dot{\phi}^2L^2\cos^2\phi+\\
+&\omega^2R^2\cos^2(\omega t) + 2\omega\dot{\phi}LR\sin\phi\cos\omega t + \dot{\phi}^2L^2\sin^2\phi)
+\\
+T =& \tfrac{1}{2}m[
+\omega^2R^2(1-\cos^2\omega t) - 2\omega\dot{\phi}LR\cos\phi\sin\omega t + \dot{\phi}^2L^2\cos^2\phi+\\
+&\omega^2R^2\cos^2(\omega t) + 2\omega\dot{\phi}LR\sin\phi\cos\omega t + \dot{\phi}^2L^2(1-\cos^2\phi)]
+\\
+T =& \tfrac{1}{2}m[
+\omega^2R^2-\omega^2R^2\cos^2\omega t - 2\omega\dot{\phi}LR\cos\phi\sin\omega t + \dot{\phi}^2L^2\cos^2\phi+\\
+&\omega^2R^2\cos^2(\omega t) + 2\omega\dot{\phi}LR\sin\phi\cos\omega t + \dot{\phi}^2L^2-\dot{\phi}^2L^2\cos^2\phi]
+\\
+T =& \tfrac{1}{2}m[
+\omega^2R^2 + 2\omega\dot{\phi}LR(\sin\phi\cos\omega t - \cos\phi\sin\omega t) + \dot{\phi}^2L^2]
+\\
+T =& \tfrac{1}{2}m[
+\omega^2R^2 + 2\omega\dot{\phi}LR\sin(\phi-\omega t) + \dot{\phi}^2L^2]
+\end{align*}
+\begin{align*}
+U =& mgh
+\\
+h =& B_y = R\sin(\omega t)-L\cos\phi
+\\
+U =& mg[R\sin(\omega t)-L\cos\phi]
+\end{align*}
+\begin{align*}
+L =& \tfrac{1}{2}m[
+\omega^2R^2 + 2\omega\dot{\phi}LR\sin(\phi-\omega t) + \dot{\phi}^2L^2] - mg[R\sin \omega t-L\cos\phi]
+\\
+\frac{\partial L}{\partial\phi} =& \frac{d}{dt}\frac{\partial L}{\partial\dot{\phi}}
+\\
+\frac{\partial L}{\partial\phi} =& m\omega\dot{\phi}LR\cos(\phi-\omega t) - mgL\sin\phi
+\\
+\frac{d}{dt}\frac{\partial L}{\partial\dot{\phi}} =& \frac{d}{dt} \left(m\omega LR\sin(\phi-\omega t) + m\dot{\phi}L^2 \right) = (\dot{\phi}-\omega)m\omega LR\cos(\phi-\omega t) + m\ddot{\phi}L^2
+\end{align*}
+\begin{align*}
+m\omega\dot{\phi}LR\cos(\phi-\omega t) - mgL\sin\phi =& (\dot{\phi}-\omega)m\omega LR\cos(\phi-\omega t) + m\ddot{\phi}L^2
+\\
+\omega\dot{\phi}LR\cos(\phi-\omega t) - gL\sin\phi =& \dot{\phi}\omega LR\cos(\phi-\omega t)- \omega^2 LR\cos(\phi-\omega t) + \ddot{\phi}L^2
+\\
+- g\sin\phi =& - \omega^2R\cos(\phi-\omega t) + \ddot{\phi}L
+\\
+\ddot{\phi}L =& \boxed{\omega^2R\cos(\phi-\omega t) - g\sin\phi}
+\end{align*}
+The equation of a standard pendulum is $L^2\frac{d^2\theta}{dt^2}=-gL\sin\theta$ which agrees with the boxed equation is we set $\omega$ to zero.
+	
+	
+	
+	
+	
+\end{document}
